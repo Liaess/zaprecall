@@ -1,15 +1,7 @@
 import { ArrowUndo } from "react-ionicons";
 import { useState } from "react";
-import {
-  Main,
-  Title,
-  Content,
-  ButtonHolder,
-  JustLearned,
-  DontRemember,
-  BarelyRemember,
-  Zap,
-} from "./cardWrapper";
+import Buttons from "./Buttons";
+import { Main, Title, Content, ButtonHolder } from "./cardWrapper";
 
 export default function Card({
   currentPage,
@@ -59,18 +51,7 @@ export default function Card({
               />
             </>
           ) : (
-            <>
-              <JustLearned onClick={() => selectedChoice("JustLearned")}>
-                Aprendi agora
-              </JustLearned>
-              <DontRemember onClick={() => selectedChoice("DontRemember")}>
-                Não lembrei
-              </DontRemember>
-              <BarelyRemember onClick={() => selectedChoice("BarelyRemember")}>
-                Lembrei com esforço
-              </BarelyRemember>
-              <Zap onClick={() => selectedChoice("Zap")}>Zap!</Zap>
-            </>
+            <Buttons selectedChoice={selectedChoice} />
           )
         ) : (
           <>
