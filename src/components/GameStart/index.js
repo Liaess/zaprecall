@@ -1,5 +1,5 @@
-import Logo from "../../assets/logo.png";
-import DoubleArrow from "../../assets/double-arrow.png";
+import Logo from "../../assets/Images/logo.png";
+import DoubleArrow from "../../assets/Images/double-arrow.png";
 import { Container } from "./gameStartWrapper";
 import { useNavigate } from "react-router-dom";
 
