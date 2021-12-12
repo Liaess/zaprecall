@@ -15,4 +15,20 @@ export const Main = styled.div`
   span {
     font-size: 1.375rem;
   }
+  button {
+    display: flex;
+    align-items: center;
+    outline: none;
+    border: 3px solid var(--yellow-color);
+    padding: 25px;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 20px;
+    img {
+      padding-left: 10px;
+    }
+  }
 `;
