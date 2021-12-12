@@ -17,11 +17,14 @@ export default function Card({
   setCurrentPage,
   title,
   answer,
+  setAnyMistake,
 }) {
   const [turnCard, setTurnCard] = useState(false);
   const [userChoice, setUserChoice] = useState("");
   const [userAlreadyChoiced, setUserAlreadyChoiced] = useState(false);
+
   function selectedChoice(userChoice) {
+    if (userChoice === "DontRemember") setAnyMistake(true);
     setUserChoice(userChoice);
     setUserAlreadyChoiced(true);
   }
