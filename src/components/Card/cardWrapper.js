@@ -53,8 +53,10 @@ export const ButtonHolder = styled.div`
     background-color: #fff;
     cursor: pointer;
   }
-  .arrowUndo {
+  svg {
     position: absolute;
+    width: 50px;
+    height: 50px;
     right: 10px;
     cursor: pointer;
   }

@@ -1,4 +1,4 @@
-import { ArrowUndo } from "react-ionicons";
+import { IoArrowUndo } from "react-icons/io5";
 import { useState } from "react";
 import Buttons from "./Buttons";
 import { Main, Title, Content, ButtonHolder } from "./cardWrapper";
@@ -41,28 +41,12 @@ export default function Card({
       <ButtonHolder>
         {turnCard ? (
           userAlreadyChoiced ? (
-            <>
-              <ArrowUndo
-                cssClasses="arrowUndo"
-                color={"#000"}
-                height="50px"
-                width="50px"
-                onClick={callNextCard}
-              />
-            </>
+            <IoArrowUndo onClick={callNextCard} />
           ) : (
             <Buttons selectedChoice={selectedChoice} />
           )
         ) : (
-          <>
-            <ArrowUndo
-              cssClasses="arrowUndo"
-              color={"#000"}
-              height="50px"
-              width="50px"
-              onClick={changeCard}
-            />
-          </>
+          <IoArrowUndo onClick={changeCard} />
         )}
       </ButtonHolder>
     </Main>
